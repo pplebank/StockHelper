@@ -1,3 +1,4 @@
+
 import scrapy
 import re
 from datetime import date
@@ -36,4 +37,3 @@ class MoneyplSpider(scrapy.Spider):
         else:
           modified_url = 'none';  
         return modified_url 
-

@@ -3,3 +3,6 @@ djangorestframework==3.12.2
 psycopg2==2.8.6
 PyJWT==1.7.1
 django-cors-headers==3.5.0
+Scrapy==2.5.0
+numpy==1.20.3
+pandas==1.2.4

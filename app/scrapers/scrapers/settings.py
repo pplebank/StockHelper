@@ -1,4 +1,4 @@
-# Scrapy settings for stockscrape project
+# Scrapy settings for scrapers project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,14 +7,14 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'stockscrape'
+BOT_NAME = 'scrapers'
 
-SPIDER_MODULES = ['stockscrape.spiders']
-NEWSPIDER_MODULE = 'stockscrape.spiders'
+SPIDER_MODULES = ['scrapers.spiders']
+NEWSPIDER_MODULE = 'scrapers.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'stockscrape (+http://www.yourdomain.com)'
+#USER_AGENT = 'scrapers (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -45,13 +45,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'stockscrape.middlewares.StockscrapeSpiderMiddleware': 543,
+#    'scrapers.middlewares.ScrapersSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'stockscrape.middlewares.StockscrapeDownloaderMiddleware': 543,
+#    'scrapers.middlewares.ScrapersDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -62,9 +62,15 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
+<<<<<<< HEAD:scraper/stockscrape/stockscrape/settings.py
 ITEM_PIPELINES = {
     'stockscrape.pipelines.StockscrapePipeline': 300,
 }
+=======
+#ITEM_PIPELINES = {
+#    'scrapers.pipelines.ScrapersPipeline': 300,
+#}
+>>>>>>> develop:scrapers/scrapers/settings.py
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
